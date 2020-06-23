@@ -8,3 +8,4 @@ Aplicação disponível em [Curso Django - Walter Schmidt Silva](https://wschmid
 [![Updates](https://pyup.io/repos/github/WschmidtS/curso-django/shield.svg)](https://pyup.io/repos/github/WschmidtS/curso-django/)
 [![Python 3](https://pyup.io/repos/github/WschmidtS/curso-django/python-3-shield.svg)](https://pyup.io/repos/github/WschmidtS/curso-django/)
 
+
