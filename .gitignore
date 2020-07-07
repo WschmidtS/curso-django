@@ -130,4 +130,3 @@ dmypy.json
 
 # Static Files
 /staticfiles/
-/pypro/base/static/
