@@ -16,6 +16,5 @@ def test_status_code(resp):
 def test_titulo_video(resp):
     assert_contains(resp, 'Demo Day - Polo Digital de Mogi das Cruzes')
 
-
 def test_conteudo_video(resp):
     assert_contains(resp, '<iframe src="https://player.vimeo.com/video/439637023" ')
