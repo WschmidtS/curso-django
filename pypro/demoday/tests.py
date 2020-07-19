@@ -14,7 +14,7 @@ def test_status_code(resp):
 
 
 def test_titulo_video(resp):
-    assert_contains(resp, '<h1>6º Demo Day - Polo Digital de Mogi das Cruzes</h1>')
+    assert_contains(resp, '<h1 class="mt-4 mb-3">6º Demo Day - Polo Digital de Mogi das Cruzes</h1>')
 
 
 def test_conteudo_video(resp):
