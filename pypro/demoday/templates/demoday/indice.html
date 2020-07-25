@@ -9,7 +9,8 @@
             <h1 class="mt-4 mb-3">Lista de Vídeos da TecAcademy</h1>
             <ol>
                 {% for video in videos %}
-                <li>{{ video.titulo | default:'Faltando Título no Vídeo'}}</li>
+                <li><a href="{{ video.get_absolute_url }}">{{video.titulo | default:'Faltando Título no Vídeo'}}</a>
+                </li>
                 {% empty %}
                 <li>Não foi encontrado nenhum Vídeo!</li>
                 {% endfor %}
