@@ -131,3 +131,6 @@ dmypy.json
 # Static Files
 /staticfiles/
 /pypro/base/static/
+
+#postgres files for local development
+.pgdata
