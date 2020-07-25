@@ -35,30 +35,8 @@
 </nav>
 
 {% block body %}{% endblock body %}
-<footer class="main-footer mt-5 pt-3 text-light">
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col">
-                <h3> Entre em Contato</h3>
-                <address>
-                    <a href="tel:+5511988293184" class="text-light">Cel.: +55 11 98829-3184</a>
-                    <br/>
-                    <a href="maioto:walter@tecacademy.com.br" class="text-light"> walter@tecacademy.com.br</a>
-                </address>
-            </div>
-        </div>
-    </div>
-    <div class="rights pb-3">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col">
-                    {% now 'Y' %} WschmidtS - Todos Direitos Reservados
-                </div>
-            </div>
-        </div>
-    </div>
 
-</footer>
+{% include 'base/footer.html' with contato_email='walter@tecacademy.com.br' only %}
 
 </body>
 </html>
