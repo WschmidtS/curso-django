@@ -1,0 +1,20 @@
+{% extends 'base/base.html' %}
+{% load static %}
+{% block title %}Vídeos das Apresentações de Pitch da TecAcademy{% endblock title%}
+{% block description %}Página com todos os vídeos disponíveis{% endblock description %}
+{% block body %}
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-12">
+            <h1 class="mt-4 mb-3">Lista de Vídeos da TecAcademy</h1>
+            <ol>
+                {% for video in videos %}
+                <li>{{ video.titulo | default:'Faltando Título no Vídeo'}}</li>
+                {% empty %}
+                <li>Não foi encontrado nenhum Vídeo!</li>
+                {% endfor %}
+            </ol>
+        </div>
+    </div>
+</div>
+{% endblock body %}
