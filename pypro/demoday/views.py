@@ -2,15 +2,9 @@ from django.shortcuts import render, get_object_or_404
 
 from pypro.demoday.models import Video
 
-videos = [
-    Video(slug='6demoday', titulo='6º Demo Day - Polo Digital de Mogi das Cruzes', vimeo_id='439637023'),
-    Video(slug='apresentacao_sebrae', titulo='Apresentação TecAcademy - Tarefa Sebrae', vimeo_id='439733389'),
-]
-
-videos_dct = {v.slug: v for v in videos}
-
 
 def indice(resquest):
+    videos = Video.objects.order_by('creation').all()
     return render(resquest, 'demoday/indice.html', context={'videos': videos})
 
 
