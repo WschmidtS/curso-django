@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render, get_object_or_404
 
 from pypro.demoday.models import Video
 
@@ -15,5 +15,5 @@ def indice(resquest):
 
 
 def video(resquest, slug):
-    video = Video.objects.get(slug=slug)
+    video = get_object_or_404(Video, slug=slug)
     return render(resquest, 'demoday/video.html', context={'video': video})
