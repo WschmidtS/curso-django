@@ -49,6 +49,7 @@ INSTALLED_APPS = [
     'pypro.base',
     'pypro.demoday',
     'pypro.modulos',
+    'ordered_model',
 ]
 
 MIDDLEWARE = [
