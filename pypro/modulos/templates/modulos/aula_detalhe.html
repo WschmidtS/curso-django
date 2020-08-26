@@ -1,0 +1,15 @@
+{% extends 'base/base.html' %}
+{% load static %}
+{% block title %}Vídeo 6º Demo Day{% endblock title%}
+{% block description %}Página com o Vídeo da apresentação do Pitch no 6º Demo Day do Polo Digital{% endblock description %}
+{% block body %}
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-12">
+            <h1 class="mt-4 mb-3">{{ aula.titulo |default:"Título Faltando" }}</h1>
+            <iframe src="https://player.vimeo.com/aula/{{ aula.vimeo_id }}" width="640" height="359" frameborder="0"
+                    allow="autoplay; fullscreen" allowfullscreen></iframe>
+        </div>
+    </div>
+</div>
+{% endblock body %}
