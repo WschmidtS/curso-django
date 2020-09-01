@@ -22,6 +22,7 @@ urlpatterns = [
     path('', include('pypro.base.urls')),
     path('demoday/', include('pypro.demoday.urls')),
     path('modulos/', include('pypro.modulos.urls')),
+    path('turmas/', include('pypro.turmas.urls')),
 
 ]
 
