@@ -30,3 +30,4 @@ def resp_post(client, usuario):
 def test_login_redirect(resp_post):
     assert resp_post.status_code == 302
     assert resp_post.url == reverse('modulos:indice')
+
