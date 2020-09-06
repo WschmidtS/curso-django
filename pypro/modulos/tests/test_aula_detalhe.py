@@ -21,6 +21,7 @@ def resp(client_com_usuario_logado, aula):
     resp = client_com_usuario_logado.get(reverse('modulos:aula', kwargs={'slug': aula.slug}))
     return resp
 
+
 def test_titulo(resp, aula: Aula):
     assert_contains(resp, aula.titulo)
 
